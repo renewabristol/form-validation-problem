@@ -1,12 +1,10 @@
 # [Form validation problem](https://springload.github.io/form-validation-problem/)
 
-We've created this problem to evaluate how developers tackle a real-world problem. If you've been assigned this problem you should spend around **2 hours** working on it. The last thing we want you to do is toil away for days on end!
-
-If you've stumbled across this and want to work at [Springload](https://www.springload.co.nz/) feel free to submit it too. We're always on the lookout for skilled developers.
+We've created this problem to evaluate how developers tackle a real-world problem. If you've been assigned this problem you should spend no more than **2 hours** working on it. We don't want you to toil away for days on end!
 
 ## Problem definition
 
-Included in this repository is an [index.html](index.html) file that contains a form. You must ensure all of the following rules are met before the form is posted to the (in this case imaginary) server:
+Included in this repository is an [index.html](index.html) file that contains a form. Please recreate this in React. You should ensure all of the following rules are met before the form is posted to the (in this case imaginary) server:
 
 * `Email` must be a valid email address.
 * `Password` must be longer than 8 characters.
@@ -25,7 +23,7 @@ If the form is submitted and an error occurs, the error element's parent should 
 </p>
 ```
 
-Please write a little bit about the technology you chose and why, including any limitations or possibilities of this approach.
+Please write a little bit about the approach you took, including any ideas about further enhancements.
 
 ## The cherry on the cake
 
@@ -40,4 +38,8 @@ Beyond the problem statement, show us the consideration you have given to some o
 
 ## Submission
 
-Please email us a link to your fork of this repository, or a zip of your solution to `1337h4x0r@springload.co.nz`.
+Please email us a link to your fork of this repository, or a zip of your solution.
+
+## Acknowledgements
+
+Thanks to [Springload](https://www.springload.co.nz/) for the original version of this test.
