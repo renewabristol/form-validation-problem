@@ -1,6 +1,7 @@
-function App() {
+
+
+const TorchboxForm = () => {
   return (
-    <div className="App">
       <form method="post" action="">
         <h1>Fill out this form</h1>
         <fieldset>
@@ -9,7 +10,7 @@ function App() {
             <label class="label" for="email">
               Email
             </label>
-            <input type="text" id="email" name="email" />
+            <input type="text" id="email" name="email" required/>
           </p>
           <p>
             <label class="label" for="password">
@@ -67,8 +68,7 @@ function App() {
           </p>
         </fieldset>
       </form>
-    </div>
   );
 }
 
-export default App;
+export default TorchboxForm;
