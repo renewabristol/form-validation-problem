@@ -1,11 +1,8 @@
-import logo from "./logo.svg";
-import "./App.css";
-
 function App() {
   return (
     <div className="App">
       <form method="post" action="">
-        <h1>Fill out this awesome form</h1>
+        <h1>Fill out this form</h1>
         <fieldset>
           <h3>Your details</h3>
           <p>
