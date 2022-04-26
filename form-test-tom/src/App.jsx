@@ -1,6 +1,7 @@
 import {useForm} from './useForm'
 import React from 'react'
 
+const animaux = ['bear','tiger','snake','donkey']
 
 const TorchboxForm = () => {
   const { handleSubmit, handleChange, data, errors } = useForm(params)
@@ -56,9 +57,16 @@ const TorchboxForm = () => {
           <p className={errors.animals ? 'error' : ''}>
             <span className="label">Animal</span>
 
-            <input type="checkbox" name="animal" value="tiger" id="tiger" />
-            <label for="tiger">Tiger</label>
-
+            {animaux.map(animal=><React.Fragment key={animal}>
+              <input 
+                type="checkbox" 
+                name="animal" 
+                value={animal} 
+                id={animal}
+                onChange={handleChange('animals')}
+              />
+              <label htmlFor={animal}>{animal.toUpperCase()}</label>
+            </React.Fragment>)}
           </p>
           
           {errors.tigerType && <p className='error'>{errors.tigerType}</p>}
