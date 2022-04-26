@@ -1,5 +1,6 @@
 import {useForm} from './useForm'
 import React from 'react'
+import params from './formParams.ts'
 
 const animaux = ['bear','tiger','snake','donkey']
 
