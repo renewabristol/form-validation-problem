@@ -93,6 +93,11 @@ const TorchboxForm = () => {
             />
           </p>
         </fieldset>
+        <p>data
+          {JSON.stringify(data)}
+        </p>errors
+        {JSON.stringify(errors)}
+
       </form>
   );
 }
