@@ -18,7 +18,8 @@ const TorchboxForm = () => {
             <label className="label" htmlFor="email">Email</label>
             <input 
               autoFocus 
-              
+              autoComplete="off"
+              placeholder='you@email.com'
               type="text" 
               id="email" 
               name="email"
@@ -32,7 +33,9 @@ const TorchboxForm = () => {
             <input
               type="password"
               id="password"
+              autoComplete="off"
               name="username"
+              placeholder="minimum of 8 characters"
               onChange={handleChange('password')}
             />
           </p>
@@ -56,7 +59,7 @@ const TorchboxForm = () => {
 
           {errors.animals && <p className='error'>{errors.animals}</p>}
           <p className={errors.animals ? 'error' : ''}>
-            <span className="label">Species</span>
+            <label className="label">Species</label>
 
             {animaux.map(animal=><React.Fragment key={animal}>
               <input 
