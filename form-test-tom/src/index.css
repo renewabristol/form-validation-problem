@@ -81,10 +81,6 @@ input[type="submit"]:active {
   border-color: #333;
 }
 
-label + input[type="checkbox"] {
-  margin-left: 1em;
-}
-
 select {
   width: 17em;
 }
