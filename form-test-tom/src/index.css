@@ -116,6 +116,7 @@ An error class to forms that fail your validation:
 </p>
 */
 .error > input,
+p.error,
 .error > label {
   color: red;
 }
