@@ -39,7 +39,7 @@ const TorchboxForm = () => {
         </fieldset>
 
         <fieldset>
-          <h2>Your animal</h2>
+          <h2>Your animals</h2>
           
           {errors.colour && <p className='error'>{errors.colour}</p>}
           <p className={errors.colour ? 'error' : ''}>
@@ -56,7 +56,7 @@ const TorchboxForm = () => {
 
           {errors.animals && <p className='error'>{errors.animals}</p>}
           <p className={errors.animals ? 'error' : ''}>
-            <span className="label">Animal</span>
+            <span className="label">Species</span>
 
             {animaux.map(animal=><React.Fragment key={animal}>
               <input 
@@ -94,10 +94,6 @@ const TorchboxForm = () => {
             />
           </p>
         </fieldset>
-        <p>data
-          {JSON.stringify(data)}
-        </p>errors
-        {JSON.stringify(errors)}
 
       </form>
   );
