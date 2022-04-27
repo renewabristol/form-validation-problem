@@ -37,6 +37,7 @@ export const useForm = (options) => {
       for (const key in validations) {
         const value = data[key];
         const validation = validations[key];
+        
         if (validation?.required?.value && !value) {
           valid = false;
           newErrors[key] = validation?.required?.message;
@@ -49,7 +50,7 @@ export const useForm = (options) => {
         }
 
         const custom = validation?.custom;
-        if (custom?.isValid && !custom.isValid(value)) {
+        if (custom?.isValid && !custom.isValid(data)) {
           valid = false;
           newErrors[key] = custom.message;
         }
