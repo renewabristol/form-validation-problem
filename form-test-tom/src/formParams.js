@@ -38,7 +38,7 @@ const params = {
     tigerType: {
       custom: {
         isValid: (data) => {
-          const tigerChosen = data.animals.tiger === true
+          const tigerChosen = data.animals?.tiger === true
           const tigerTypeEntered = data.tigerType
           if (!tigerChosen) return true
           if (tigerChosen && !tigerTypeEntered) return false
